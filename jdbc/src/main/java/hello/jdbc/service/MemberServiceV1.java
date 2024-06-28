@@ -3,17 +3,9 @@ package hello.jdbc.service;
 import hello.jdbc.domain.Member;
 import hello.jdbc.repository.MemberRepositoryV1;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
 
-@Service
-@Component
-@Repository
-@Controller
 @RequiredArgsConstructor
 public class MemberServiceV1 {
     private final MemberRepositoryV1 memberRepository;
